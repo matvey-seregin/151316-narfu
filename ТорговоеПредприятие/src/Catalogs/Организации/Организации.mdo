@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55708629-0bb5-464d-968a-9936abf5224a">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76647224-32b1-4164-be36-0f386db70d08">
   <producedTypes>
-    <objectType typeId="50d755e3-1bfb-4c7a-a1a0-8a3eb06739c8" valueTypeId="f7ac565b-90b9-415b-8f76-4f9565496866"/>
-    <refType typeId="77983edd-6a0c-44a9-b398-26feea28d4b4" valueTypeId="83b616ed-4d35-4338-bf40-29460dcb0228"/>
-    <selectionType typeId="40ec3690-373b-4b02-9a39-205a4c6ee31c" valueTypeId="fe426ac8-1ced-4bec-b76d-db11f802216b"/>
-    <listType typeId="77118466-d951-45db-bfde-4b7ad470a91a" valueTypeId="41c9db76-293a-409c-8f6f-5bee8bf0ebf1"/>
-    <managerType typeId="03771a85-52ab-40f2-b50c-49fecea3d991" valueTypeId="2980413c-b64f-440c-ac15-ffe8d03877aa"/>
+    <objectType typeId="006952d6-8c50-447d-99db-8f681084ace1" valueTypeId="ae12ac6b-ebcd-4a60-ac98-c4c941151990"/>
+    <refType typeId="c0412c86-aaa4-473a-9602-1b0aa433ed2b" valueTypeId="5b65526b-00c0-488e-bd08-7d10eefb6baf"/>
+    <selectionType typeId="277c67c8-c894-43aa-ab2c-6fccc85b14fd" valueTypeId="9d6fc495-8764-4d82-af0b-c844a1370d3a"/>
+    <listType typeId="7721b74c-6b1a-4a21-8521-ae09340f6c42" valueTypeId="a3a57491-d3ed-4c7f-911e-1810a05d20b9"/>
+    <managerType typeId="9100be7c-1eb0-46fb-a2a2-6218cbc0cb58" valueTypeId="dcc12d6f-cb7e-4ffd-a4d4-270868c8d804"/>
   </producedTypes>
-  <name>Номенклатура</name>
+  <name>Организации</name>
   <synonym>
     <key>ru</key>
-    <value>Номенклатура</value>
+    <value>Организации</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.Номенклатура.StandardAttribute.Code</inputByString>
-  <inputByString>Catalog.Номенклатура.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Организации.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Организации.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -66,10 +66,6 @@
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Parent</name>
-    <synonym>
-      <key>ru</key>
-      <value>Папка</value>
-    </synonym>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -102,9 +98,8 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Номенклатура</value>
+    <value>Организация</value>
   </objectPresentation>
-  <hierarchical>true</hierarchical>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>

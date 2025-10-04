@@ -39,5 +39,14 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
+  <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Организации</catalogs>
+  <documents>Document.Покупка</documents>
+  <documents>Document.Продажа</documents>
+  <enums>Enum.ВидыДоговоров</enums>
+  <reports>Report.Продажи</reports>
+  <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>

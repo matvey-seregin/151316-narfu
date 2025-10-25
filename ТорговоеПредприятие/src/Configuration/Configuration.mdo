@@ -39,10 +39,27 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.Закупки</subsystems>
+  <subsystems>Subsystem.Настройки</subsystems>
+  <subsystems>Subsystem.НСИ</subsystems>
+  <subsystems>Subsystem.Продажи</subsystems>
+  <roles>Role.ДобавлениеИзменениеДокументовПокупки</roles>
+  <roles>Role.ДобавлениеИзменениеДокументовПродажи</roles>
+  <roles>Role.ДобавлениеИзменениеКонтрагентов</roles>
+  <roles>Role.ДобавлениеИзменениНСИ</roles>
+  <roles>Role.ЗапускВебКлиента</roles>
+  <roles>Role.ЗапускМобильногоКлиента</roles>
+  <roles>Role.ЗапускТонкогоКлиента</roles>
+  <roles>Role.ПолныеПрава</roles>
+  <roles>Role.СохранениеДанныхВывод</roles>
+  <roles>Role.ЧтениеНСИ</roles>
+  <functionalOptions>FunctionalOption.ИспользоватьУчетПоСкладам</functionalOptions>
+  <constants>Constant.ИспользоватьУчетПоСкладам</constants>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Организации</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
   <documents>Document.Покупка</documents>
   <documents>Document.Продажа</documents>
   <enums>Enum.ВидыДоговоров</enums>

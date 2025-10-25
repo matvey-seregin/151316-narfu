@@ -43,6 +43,7 @@
   <subsystems>Subsystem.Настройки</subsystems>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Продажи</subsystems>
+  <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
   <roles>Role.ДобавлениеИзменениеДокументовПокупки</roles>
   <roles>Role.ДобавлениеИзменениеДокументовПродажи</roles>
   <roles>Role.ДобавлениеИзменениеКонтрагентов</roles>
@@ -53,6 +54,9 @@
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.СохранениеДанныхВывод</roles>
   <roles>Role.ЧтениеНСИ</roles>
+  <commonModules>CommonModule.Пользователи</commonModules>
+  <commonModules>CommonModule.ЦеныНоменклатуры</commonModules>
+  <commonModules>CommonModule.ЦеныНоменклатурыВызовСервера</commonModules>
   <functionalOptions>FunctionalOption.ИспользоватьУчетПоСкладам</functionalOptions>
   <constants>Constant.ИспользоватьУчетПоСкладам</constants>
   <catalogs>Catalog.ДоговорыКонтрагентов</catalogs>
@@ -60,10 +64,14 @@
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Склады</catalogs>
+  <catalogs>Catalog.Сотрудники</catalogs>
   <documents>Document.Покупка</documents>
   <documents>Document.Продажа</documents>
+  <documents>Document.УстановкаЦенНоменклатуры</documents>
   <enums>Enum.ВидыДоговоров</enums>
+  <enums>Enum.Должности</enums>
   <reports>Report.Продажи</reports>
+  <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>

@@ -235,4 +235,19 @@
     </attributes>
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
+  <templates uuid="7cca9f6b-e69b-439e-8f49-04aae38e764f">
+    <name>Акт</name>
+  </templates>
+  <commands uuid="a3614e80-d07c-4fc3-97b5-63c91ec9ab4f">
+    <name>Акт</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.Продажа</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+  </commands>
 </mdclass:Document>

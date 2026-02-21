@@ -43,6 +43,7 @@
   <subsystems>Subsystem.Настройки</subsystems>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Продажи</subsystems>
+  <commonPictures>CommonPicture.ПустаяКартинка</commonPictures>
   <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
   <roles>Role.ДобавлениеИзменениеДокументовПокупки</roles>
   <roles>Role.ДобавлениеИзменениеДокументовПродажи</roles>

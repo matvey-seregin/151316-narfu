@@ -40,15 +40,47 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СебестоимостьОборот</dataPath>
+			<field>СебестоимостьОборот</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Себестоимость</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ПродажиОбороты.Контрагент КАК Контрагент,
 	ПродажиОбороты.Номенклатура КАК Номенклатура,
 	ПродажиОбороты.КоличествоОборот КАК КоличествоОборот,
-	ПродажиОбороты.СуммаОборот КАК СуммаОборот
+	ПродажиОбороты.СуммаОборот КАК СуммаОборот,
+	ПродажиОбороты.СебестоимостьОборот КАК СебестоимостьОборот
 ИЗ
 	РегистрНакопления.Продажи.Обороты КАК ПродажиОбороты</query>
 	</dataSet>
+	<calculatedField>
+		<dataPath>МаржинальнаяПрибыль</dataPath>
+		<expression>СуммаОборот - СебестоимостьОборот</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Маржинальная прибыль</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>МаржинальнаяРентабельность</dataPath>
+		<expression>ВЫБОР КОГДА СуммаОборот = 0 ТОГДА 0 ИНАЧЕ
+(СуммаОборот - СебестоимостьОборот) / СуммаОборот КОНЕЦ * 100</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Маржинальная рентабельность</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<totalField>
 		<dataPath>КоличествоОборот</dataPath>
 		<expression>Сумма(КоличествоОборот)</expression>
@@ -57,6 +89,21 @@
 	<totalField>
 		<dataPath>СуммаОборот</dataPath>
 		<expression>Сумма(СуммаОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СебестоимостьОборот</dataPath>
+		<expression>Сумма(СебестоимостьОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МаржинальнаяПрибыль</dataPath>
+		<expression>Сумма(МаржинальнаяПрибыль)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МаржинальнаяРентабельность</dataPath>
+		<expression>ВЫБОР КОГДА Сумма(СуммаОборот) = 0 ТОГДА 0 ИНАЧЕ
+Сумма(СуммаОборот - СебестоимостьОборот) / Сумма(СуммаОборот) КОНЕЦ * 100
+
+</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -120,7 +167,16 @@
 					<dcsset:field>КоличествоОборот</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СебестоимостьОборот</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаОборот</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МаржинальнаяПрибыль</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МаржинальнаяРентабельность</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
@@ -142,6 +198,27 @@
 					<dcsset:userSettingID>91fe26ff-cacf-4f93-a7fa-9ba89495fde7</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>МаржинальнаяРентабельность</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=0; ЧФ=Ч%</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">

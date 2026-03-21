@@ -66,6 +66,7 @@
   <catalogs>Catalog.Организации</catalogs>
   <catalogs>Catalog.Склады</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
+  <documents>Document.ЗаказПокупателя</documents>
   <documents>Document.Покупка</documents>
   <documents>Document.Продажа</documents>
   <documents>Document.УстановкаЦенНоменклатуры</documents>

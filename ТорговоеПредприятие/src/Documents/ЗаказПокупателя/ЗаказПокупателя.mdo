@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4127c6d3-78ff-48b3-9a88-cdffe139dbf7">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="810d27ae-1565-443e-9319-78325ff69dc1">
   <producedTypes>
-    <objectType typeId="d98e81e9-3a99-4038-956e-cd6d037bfd34" valueTypeId="7ef01ab3-0bda-4931-b5eb-fc44097e3ba2"/>
-    <refType typeId="cff33f68-f1f5-4bba-ad09-33bca1058ec3" valueTypeId="abe1825b-221e-465e-bf00-a4d35cfc7d72"/>
-    <selectionType typeId="e0194245-9518-4b2e-91e0-5766a41d5148" valueTypeId="800ce33e-2a1c-4daa-aa15-bcaf0ff17375"/>
-    <listType typeId="8613bc54-ebad-4b35-b11a-b2a8dd1c5558" valueTypeId="074ac1b5-be77-445b-8ba2-458c6f9ee4aa"/>
-    <managerType typeId="f2e9cf9f-35f8-407b-bb38-3a308e057e19" valueTypeId="b32ced8d-c510-4bfb-8954-938368718a50"/>
+    <objectType typeId="0b8e1cf7-91b4-4cb6-81c5-0a382faebe11" valueTypeId="0e10cd77-f2f3-45de-9e93-498ea2a43e42"/>
+    <refType typeId="51301d36-125b-4933-ae15-503b0f3d8425" valueTypeId="1f34b9b4-63af-4cde-88a3-76c4cb5a0ff3"/>
+    <selectionType typeId="74d78966-d86c-4ad4-8e79-90a9ae74a6e7" valueTypeId="6fc966e3-3277-4ea2-a8d5-9fe5e4cd66ff"/>
+    <listType typeId="65b70811-57cf-4b6a-8ad6-df39638bb1c3" valueTypeId="f841fbc8-834f-420a-8313-2b3e9b214b3e"/>
+    <managerType typeId="5565c48b-7718-4603-aa77-bf8b1d238759" valueTypeId="223acc92-1a8c-468c-a26c-60b91535d641"/>
   </producedTypes>
-  <name>Продажа</name>
+  <name>ЗаказПокупателя</name>
   <synonym>
     <key>ru</key>
-    <value>Продажа</value>
+    <value>Заказ покупателя</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.Продажа.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ЗаказПокупателя.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
-  <basedOn>Document.ЗаказПокупателя</basedOn>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <listPresentation>
     <key>ru</key>
-    <value>Продажи</value>
+    <value>Заказы покупателей</value>
   </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.Продажа.Form.ФормаДокумента</defaultObjectForm>
+  <defaultObjectForm>Document.ЗаказПокупателя.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="db63b257-1f86-4e03-ab06-4198c940e307">
+  <attributes uuid="fd28e507-f5a4-4d68-a08a-41cbe9af4103">
     <name>Контрагент</name>
     <synonym>
       <key>ru</key>
@@ -49,7 +48,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="43266ae0-abd9-4ae9-9d86-cb0a8f9a3183">
+  <attributes uuid="a015e912-14c5-45aa-83c2-3af09f725fc0">
     <name>Организация</name>
     <synonym>
       <key>ru</key>
@@ -65,7 +64,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b2cfcf40-85c2-4c23-97ac-e471ba1de7fb">
+  <attributes uuid="db94278d-cc45-4b6c-af97-1e910a688978">
     <name>Договор</name>
     <synonym>
       <key>ru</key>
@@ -79,11 +78,11 @@
     <fillChecking>ShowError</fillChecking>
     <choiceParameterLinks>
       <name>Отбор.Организация</name>
-      <field>Document.Продажа.Attribute.Организация</field>
+      <field>Document.ЗаказПокупателя.Attribute.Организация</field>
     </choiceParameterLinks>
     <choiceParameterLinks>
       <name>Отбор.Владелец</name>
-      <field>Document.Продажа.Attribute.Контрагент</field>
+      <field>Document.ЗаказПокупателя.Attribute.Контрагент</field>
     </choiceParameterLinks>
     <choiceParameters>
       <name>Отбор.ВидДоговора</name>
@@ -95,7 +94,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="ce8ab5fd-e82f-449a-9699-f618006082f7">
+  <attributes uuid="a55b6274-0acb-457f-8f95-8b88858e9802">
     <name>Склад</name>
     <synonym>
       <key>ru</key>
@@ -110,22 +109,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="4745c013-2868-422c-bc27-f08d103ca069">
-    <name>Основание</name>
-    <synonym>
-      <key>ru</key>
-      <value>Основание</value>
-    </synonym>
-    <type>
-      <types>DocumentRef.ЗаказПокупателя</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="87c50ab7-1085-46c7-ba9d-18f455896e14">
+  <attributes uuid="d6cecc80-f28e-401d-a481-ba5f0fd9a62c">
     <name>Комментарий</name>
     <synonym>
       <key>ru</key>
@@ -141,7 +125,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="bb0bb51a-2a63-4bcc-9db4-79869c22fdd6">
+  <attributes uuid="40e5abbe-a7d3-46bd-9db8-4c09c4f2fcb8">
     <name>Ответственный</name>
     <synonym>
       <key>ru</key>
@@ -156,7 +140,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="395f87fe-1277-46c2-8614-3bc020881d4b">
+  <forms uuid="77c4a5e2-466e-4b50-ba49-c8735527ca48">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
@@ -165,10 +149,10 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <tabularSections uuid="859a17ff-d5c0-4e7b-80dd-0daf0cc61d21">
+  <tabularSections uuid="19a4ab30-138f-479a-bcf2-70372ebcfeb9">
     <producedTypes>
-      <objectType typeId="cbead236-564b-4adf-8f41-a547bdeddcb6" valueTypeId="4eab3cbe-8b92-4ca1-bcf8-8d8b87ed5890"/>
-      <rowType typeId="45b597bd-bbed-421f-8084-0aec585fdb41" valueTypeId="1e250840-c949-485e-a62d-3b91e25b5da0"/>
+      <objectType typeId="f408a3fa-a716-4bbb-a6e6-1b4e8a9c604e" valueTypeId="02241d05-ac94-4e2c-a8a1-5045641bd4e1"/>
+      <rowType typeId="714eeba6-d1c9-429c-aa3a-9609cb7461d6" valueTypeId="ffd4c21b-f19c-4e98-a093-1d083f769045"/>
     </producedTypes>
     <name>СписокНоменклатуры</name>
     <synonym>
@@ -176,7 +160,7 @@
       <value>Список номенклатуры</value>
     </synonym>
     <fillChecking>ShowError</fillChecking>
-    <attributes uuid="794cab5b-360e-4b22-bff8-9c65e98c579d">
+    <attributes uuid="2f2cba8d-491f-4b67-8a7b-c160ea38eb4b">
       <name>Номенклатура</name>
       <synonym>
         <key>ru</key>
@@ -191,7 +175,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="9dbbe892-7a75-4928-a178-63f853d3a0c2">
+    <attributes uuid="f554421a-e9c0-4cc7-83f8-a034b22ae8cd">
       <name>Цена</name>
       <synonym>
         <key>ru</key>
@@ -210,7 +194,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="e0408ed9-fa0e-4faa-b886-a51e2c6d0ad5">
+    <attributes uuid="2c280b7c-bf0e-46f8-945c-21e76713dca5">
       <name>Количество</name>
       <synonym>
         <key>ru</key>
@@ -229,7 +213,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="59973cdf-36fd-44aa-9bb5-588bf38ac25d">
+    <attributes uuid="56a31e26-5829-4c14-81b0-faeece9f8565">
       <name>Сумма</name>
       <synonym>
         <key>ru</key>
@@ -251,19 +235,4 @@
     </attributes>
     <lineNumberLength>9</lineNumberLength>
   </tabularSections>
-  <templates uuid="7cca9f6b-e69b-439e-8f49-04aae38e764f">
-    <name>Акт</name>
-  </templates>
-  <commands uuid="a3614e80-d07c-4fc3-97b5-63c91ec9ab4f">
-    <name>Акт</name>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.Продажа</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>PictureAndText</representation>
-    <picture xsi:type="core:PictureRef">
-      <picture>StdPicture.Print</picture>
-    </picture>
-  </commands>
 </mdclass:Document>

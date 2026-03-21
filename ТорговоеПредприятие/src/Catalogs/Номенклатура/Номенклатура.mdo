@@ -116,4 +116,13 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <forms uuid="ecb94d96-0527-4bd7-82c2-cf94a6773a0a">
+    <name>ФормаПодбораСКорзиной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора с корзиной</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

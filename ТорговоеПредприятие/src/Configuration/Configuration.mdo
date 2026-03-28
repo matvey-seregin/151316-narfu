@@ -43,6 +43,7 @@
   <subsystems>Subsystem.Настройки</subsystems>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Продажи</subsystems>
+  <commonPictures>CommonPicture.ДлительнаяОперация</commonPictures>
   <commonPictures>CommonPicture.ПустаяКартинка</commonPictures>
   <sessionParameters>SessionParameter.ТекущийПользователь</sessionParameters>
   <roles>Role.ДобавлениеИзменениеДокументовПокупки</roles>
@@ -56,6 +57,7 @@
   <roles>Role.СохранениеДанныхВывод</roles>
   <roles>Role.ЧтениеНСИ</roles>
   <commonModules>CommonModule.Пользователи</commonModules>
+  <commonModules>CommonModule.ТяжелыеОперации</commonModules>
   <commonModules>CommonModule.ЦеныНоменклатуры</commonModules>
   <commonModules>CommonModule.ЦеныНоменклатурыВызовСервера</commonModules>
   <functionalOptions>FunctionalOption.ИспользоватьУчетПоСкладам</functionalOptions>
@@ -73,6 +75,7 @@
   <enums>Enum.ВидыДоговоров</enums>
   <enums>Enum.Должности</enums>
   <reports>Report.Продажи</reports>
+  <dataProcessors>DataProcessor.ТяжелаяОперация</dataProcessors>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>

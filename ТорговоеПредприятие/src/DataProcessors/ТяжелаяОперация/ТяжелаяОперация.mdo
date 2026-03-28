@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d44f9401-0cab-46c4-b794-94d409b14426">
+  <producedTypes>
+    <objectType typeId="785ff82b-9635-44db-9d0e-6fbd7eed00d4" valueTypeId="2b4c14f2-6d2e-43a2-a1f4-3511d8f44acc"/>
+    <managerType typeId="5fdb7006-0315-4559-b885-6612d395aa24" valueTypeId="e0e97810-61a8-44d9-a562-2158640c35f8"/>
+  </producedTypes>
+  <name>ТяжелаяОперация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тяжелая операция</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТяжелаяОперация.Form.Форма</defaultForm>
+  <forms uuid="59fb85c1-56ff-4010-b758-9fba1a738af0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
